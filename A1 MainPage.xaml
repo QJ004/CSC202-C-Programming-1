@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a hovercraft number nine" />
+
+            <Label
+                Text="Enter your name:"
+                FontSize="18"
+                HorizontalOptions="Center" />
+                <!-- This is the text field for "enter your name" in font size 10 in the center of the screen. -->
+            <Entry
+                x:Name="txtName"
+                Placeholder="Your Name" />
+                <!-- Placeholder for "Your name" in the textbox and the x: txtName is for the cs page for when I want to have the function working in the cs. -->
+
+             <Label
+                Text="Enter your age:"
+                FontSize="18"
+                HorizontalOptions="Center" />
+                <!-- This is the label text for entering your age. Same size font and and the middle of the screen. -->
+            <Entry
+                x:Name="txtAge"
+                Placeholder="Your Age" />
+                <!-- Placeholder for "Your age" in the textbox and the x: txtAge is for the cs page for when I want to have the function working in the cs. -->
+
+            <Button
+                x:Name="btnSubmit"
+                Text="Submit" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="BtnSubmit_Clicked"
+                HorizontalOptions="Center" />
+                <!-- This is the button and the x:btnSumbit is for the cs page. -->
+                <!-- The text inside the box to let the user know to press the button. -->
+                <!-- BtnSubmit_Clicked is for the function for the cs page for when to get the button to work on the page. -->
+                <!-- And the HorizonalOptions is the position of the button on the center of the page. -->
+
+            <Label 
+                x:Name="lblResults"
+                FontSize="18"
+                HorizontalOptions="Center"
+                Text="Results will appear here" />
+                <!-- This is for the text for "results will appear here" text and it is in the center of the page and in font 18. -->
+            
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
