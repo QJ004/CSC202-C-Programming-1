@@ -20,8 +20,12 @@ public partial class MainPage : ContentPage
     {
         string name = txtName.Text; 
         // Gets the text entered by the user in a text input field (textName).
+        string age = txtAge.Text; 
+        // Retrieving the age the user inputs and store it in the system.
         
         lblResults.Text = "Hello, " + name + "!";
         // Updates the text of a label (lblResults) to greet the user with their name.
+        lblResults.Text = "Hello, " + name + "! You are " + age;
+        // Updates the text of label to also greet them using their age.
     }
 }
